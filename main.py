@@ -21,7 +21,7 @@ def initialize_sniper():
     p1 = log.progress(gray_color + "SniperBot" + end_color)
 
     # Set up the Selenium web driver
-    s = Service("/usr/local/bin/chromedriver")
+    s = Service("/path/to/your/web/driver") # Placeholder comment for the actual driver path
     driver = webdriver.Chrome(service=s)
 
     p1.status(blue_color + "URL reached" + end_color)
@@ -50,7 +50,7 @@ def search(p1, driver):
         if add_to_cart:
             # Add the item to the cart
             p1.success(light_blue_color + "Item added to cart" + end_color)
-            driver.find_element(By.CSS_SELECTOR, "/* CSS selector for Add to Cart button */").click() # Placeholder comment for the CSS selector
+            add_to_cart.click()
 
             sleep(5)
             driver.find_element(By.CSS_SELECTOR, "/* CSS selector for Go to Cart button */").click() # Placeholder comment for the CSS selector
