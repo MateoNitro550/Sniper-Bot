@@ -11,7 +11,7 @@ Sniper Bot is an automated Python script designed for real-time monitoring of pr
     * [Sniper Bot](#sniper-bot)
     * [Discord Bot](#discord-bot)
 
-# How It Works
+## How It Works
 
 1. **Web Scraping with Selenium:** Sniper Bot utilizes the Selenium library for web scraping, enabling it to interact with product pages. It simulates a web browser to interact with elements on the page and determine product availability.
 
